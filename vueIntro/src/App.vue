@@ -1,6 +1,5 @@
 <script setup>
   import HelloWorld from './components/HelloWorld.vue'
-
   import Directives from './components/TheDirectives.vue'
   import CompositionApi from './components/Composition.vue'
   import DescComputed from './components/Computed.vue'
@@ -8,6 +7,10 @@
   import Conditional from './components/ConditionalRendering.vue'
   import ListRender from './components/ListRendering.vue'
   import FormInputs from './components/FormInputBinding.vue'
+  import Watch from './components/Watcher.vue'
+  import Ref from './components/Refs.vue'
+  import ComponentBasics from './components/ComponentsBasics.vue'
+  
 </script>
 
 <template>
@@ -28,6 +31,9 @@
     <Conditional/>
     <ListRender/>
     <FormInputs/>
+    <Watch/>
+    <Ref/>
+    <ComponentBasics title="SEO Optimization" />
   </main>
 </template>
 
@@ -40,7 +46,7 @@
     display: block;
     margin: 0 auto 2rem;
   }
-
+  
   @media (min-width: 1024px) {
     header {
       display: flex;
